@@ -1,5 +1,5 @@
 ---
-title: "過渡現象って何なんだよ"
+title: "過渡現象って何それ美味しいの？"
 emoji: "🤔"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["過渡現象", "電気回路"]
