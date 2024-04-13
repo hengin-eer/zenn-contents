@@ -85,4 +85,6 @@ jobs:
 - [AstroサイトをGitHub Pagesにデプロイする | Docs](https://docs.astro.build/ja/guides/deploy/github/)
 - [カスタムドメインとGitHub Pagesについて - GitHub Docs](https://docs.github.com/ja/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
 - [GitHub Pages サイトのカスタムドメインを管理する - GitHub Docs](https://docs.github.com/ja/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain)
+- [GithubActionsで環境変数を理解する。](https://zenn.dev/hashito/articles/aef4de448f341b)
+- [コンテキスト - GitHub Docs](https://docs.github.com/ja/actions/learn-github-actions/contexts#secrets-context)
 - [GitHub Actionsで静的ジェネレートした時に環境変数を使う #Nuxt - Qiita](https://qiita.com/sho_fcafe/items/6ef087cb3b1586464175)
