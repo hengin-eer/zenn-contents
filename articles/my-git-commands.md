@@ -58,9 +58,25 @@ git log -n 5
 # ⭐あまり使わないけど必要
 ホンマに使わないですが、いざという時に覚えておくと便利、否、覚えておかないといけないコマンド集です。
 
+## コミット済みのファイルを`.gitignore`に追加したい時 `git rm -r --cached`
+`.gitignore`にファイルを追加しても、追跡対象になっていた時がたまにあります。
+このままでは`.gitignore`にファイル・フォルダ名を書いたところで、全然Gitコミットとして記録されていくので、追跡対象外にしてやる必要があります。
+
+```bash
+git rm -r --cached <file-or-folder-name>
+git rm -r --cached ./README.md # 例: README.mdを追跡対象外に加えるとき
+```
+
+これでGitのコミット記録から外されますが以前のコミット履歴は残ってしまうので、コミット履歴を削除したい場合は、後述する[コミット履歴を削除したい時](#コミット履歴を削除したい時)を参考にしてください。
+
+## コミット履歴を削除したい時
+🚧力尽きたので随時追加
+
 <!-- TODO -->
 🚧上にコマンドを随時追加
 
-## 参考
+# 参考
 - [【Git入門】git log の使い方とオプション一覧（コミット履歴を確認する） | 初心者向け完全無料プログラミング入門](https://26gram.com/git-log)
 - [git logコマンドを終了する方法 #初心者 - Qiita](https://qiita.com/EasyCoder/items/7a0fc2146a9b07929b67)
+- [.gitignoreに記載したのに反映されない件 #Git - Qiita](https://qiita.com/fuwamaki/items/3ed021163e50beab7154)
+- [【Git】やっちまったコミットを戻したい時のTips](https://zenn.dev/nekoniki/articles/f238efa56eb869#revert%E3%82%92%E4%BD%BF%E3%81%86%E5%A0%B4%E5%90%88)
