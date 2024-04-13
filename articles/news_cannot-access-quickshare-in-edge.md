@@ -3,7 +3,7 @@ title: "Googleの旧Nearby ShareをダウンロードしようとしたらEdge�
 emoji: "🥲"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["News", "NearbyShare"]
-published: false
+published: true
 ---
 :::message
 後で個人ブログに移動するかもです。
