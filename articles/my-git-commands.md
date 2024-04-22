@@ -1,5 +1,5 @@
 ---
-title: "【不定期更新】個人的Gitコマンド集"
+title: "【不定期更新】Gitコマンドの細道"
 emoji: "🪄"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Git", "コマンド集", "チートシート"]
