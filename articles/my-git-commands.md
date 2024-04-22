@@ -33,6 +33,10 @@ VScodeから浮気して出てきた課題が「Git操作がやりにくいこ�
 
 に捧げます。
 
+> 普通に最初はVScode上などGUIのほうが操作しやすいので、コマンド操作を楽しむ感覚で取り組むと良いと思います。
+> VScodeのほうが楽な場合が多いので、ムリにコマンドラインで操作しなくても大丈夫です。
+> しかし、ところどころコマンド操作は必要なのでチートシートみたいにご利用ください。
+
 ## よく使う
 自分がよく使うコマンド集です。
 他の皆さんも使いがちなラインナップとなっているはずなので、特にオプションをご参考下さいませ。
@@ -43,6 +47,21 @@ VScodeから浮気して出てきた課題が「Git操作がやりにくいこ�
 
 <!-- TODO -->
 🚧コマンドオプションを追加する
+
+### `git status`: 各ファイルの変更状況を把握する
+各ファイルが
+- 新規ファイルなのか削除ファイルなのか
+- 名前を変更しただけなのか
+- ステージングされているのか否か
+
+など、変更状況は必須レベルに確認したいですね。
+そんな時は`git status`が使えます。
+```bash
+git status
+```
+
+いつもVScodeの「Git History」という神拡張機能に頼っているため、ぶっちゃけ`git status`の凄みが感じられにくい今日この頃です。
+ただし地味に使うので感謝は忘れません。
 
 ### `git reset`: コミット履歴に対して取り消しを行う
 主にステージングの取り消しや、過去のコミット時点に復帰する場合はこのコマンドを使用すると良いです。
@@ -80,12 +99,13 @@ q
 
 #### `-n`: 表示コミット数の制限
 通常`git log`コマンドを使用すると、全てのログが表示されるまでスクロールしていく必要があります。
-全ログが不要で、直近5コミットのみを確認したい！なんてときは以下のように使えます。
+全ログが不要で、直近のコミットだけを確認したいときは以下のようにします。
 
 ```bash
 git log -n 5
 ```
 
+今回は最新5つのコミットが表示されます。
 `-n`オプションの後に任意の数字を入力すると、その数字分だけのコミットが表示されます。
 
 <!-- TODO -->
@@ -140,11 +160,7 @@ git config --global core.quotepath false
 - [git logコマンドを終了する方法 #初心者 - Qiita](https://qiita.com/EasyCoder/items/7a0fc2146a9b07929b67)
 - [.gitignoreに記載したのに反映されない件 #Git - Qiita](https://qiita.com/fuwamaki/items/3ed021163e50beab7154)
 - [【Git】やっちまったコミットを戻したい時のTips](https://zenn.dev/nekoniki/articles/f238efa56eb869#revert%E3%82%92%E4%BD%BF%E3%81%86%E5%A0%B4%E5%90%88)
-
-<!-- TODO: これより下から執筆 -->
 - [【Git】git status で変更状況を確認する方法 #Git - Qiita](https://qiita.com/sun_tomo/items/2aa7c4b2f6534fc0f0b3)
 - [[git]git statusコマンドで日本語の文字化けを解消する | akamist blog](https://akamist.com/blog/archives/1160)
 - [git diff や git status での日本語の文字化けを防ぐ (core.page, core.quotepath) - まくまく Git ノート](https://maku77.github.io/p/cj2uie9/)
-- [Windows git "warning: LF will be replaced by CRLF"、その警告の末尾は逆方向ですか?- スタックオーバーフロー](https://stackoverflow.com/questions/17628305/windows-git-warning-lf-will-be-replaced-by-crlf-is-that-warning-tail-backwar)
-- [【備忘録】改行コード「CR」「LF」「CRLF」の違い #改行コード - Qiita](https://qiita.com/sbeleg_77/items/833de09f7bca24bc8ab8)
 - [git reset と git restore の違いを理解しよう #Git - Qiita](https://qiita.com/yamazaki_25/items/eace7d15ec16d4c6d822)
