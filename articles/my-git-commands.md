@@ -63,6 +63,13 @@ git status
 いつもVScodeの「Git History」という神拡張機能に頼っているため、ぶっちゃけ`git status`の凄みが感じられにくい今日この頃です。
 ただし地味に使うので感謝は忘れません。
 
+### `git diff`: ファイルの変更点を確認する
+ファイルを編集したは良いが、どこをいじったのかが分からなくなることが多い。
+そこでファイルの変更点、差分を表示してくれるのが`git diff`コマンドです。
+
+#### :construction: コマンドオプション...
+aaaa...
+
 ### `git reset`: コミット履歴に対して取り消しを行う
 主にステージングの取り消しや、過去のコミット時点に復帰する場合はこのコマンドを使用すると良いです。
 過去コミットに復帰する際は`git log`でその時点で表示されるハッシュ値`commit-hash-val`を確認し、以下のコマンドに代入します。
@@ -164,3 +171,4 @@ git config --global core.quotepath false
 - [[git]git statusコマンドで日本語の文字化けを解消する | akamist blog](https://akamist.com/blog/archives/1160)
 - [git diff や git status での日本語の文字化けを防ぐ (core.page, core.quotepath) - まくまく Git ノート](https://maku77.github.io/p/cj2uie9/)
 - [git reset と git restore の違いを理解しよう #Git - Qiita](https://qiita.com/yamazaki_25/items/eace7d15ec16d4c6d822)
+- [忘れやすい人のための git diff チートシート #Git - Qiita](https://qiita.com/shibukk/items/8c9362a5bd399b9c56be)
