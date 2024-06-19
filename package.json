@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "npx zenn preview",
-    "article": "npx zenn new:article" 
+    "article": "npx zenn new:article"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "zenn-cli": "^0.1.153"
+    "zenn-cli": "^0.1.154"
   }
 }
